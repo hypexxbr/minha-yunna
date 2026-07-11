@@ -260,3 +260,40 @@ a:focus-visible, iframe:focus-visible {
   .gallery { grid-template-columns: repeat(4, 1fr); }
   .polaroid.p2, .polaroid.p4 { margin-top: 32px; }
 }
+
+/* ---------- mini player flutuante ---------- */
+.mini-player {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.mini-player-toggle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(227,184,114,0.35);
+  background: var(--navy-deep);
+  color: var(--gold);
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.mini-player-toggle:hover {
+  background: rgba(227,184,114,0.12);
+}
+
+.mini-player-panel {
+  width: min(300px, 80vw);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+.mini-player-panel[hidden] {
+  display: none;
+}

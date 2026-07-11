@@ -58,3 +58,19 @@ window.addEventListener("resize", resize);
 resize();
 requestAnimationFrame(draw);
 if (reduceMotion) draw(0);
+
+// ---------- mini player flutuante ----------
+const miniToggle = document.getElementById("miniPlayerToggle");
+const miniPanel = document.getElementById("miniPlayerPanel");
+if (miniToggle && miniPanel) {
+  miniToggle.addEventListener("click", () => {
+    const isHidden = miniPanel.hasAttribute("hidden");
+    if (isHidden) {
+      miniPanel.removeAttribute("hidden");
+      miniToggle.setAttribute("aria-expanded", "true");
+    } else {
+      miniPanel.setAttribute("hidden", "");
+      miniToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}
