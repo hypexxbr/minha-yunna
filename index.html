@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>para Naná</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">um presente pra</p>
+    <h1 class="wordmark">Naná</h1>
+    <p class="hero-sub">de Celso, com todo carinho</p>
+
+    <div class="counter" aria-live="polite">
+      <span class="counter-number" id="dayCount">0</span>
+      <span class="counter-label" id="dayLabel">dias juntos desde 26 de maio</span>
+    </div>
+
+    <a class="scroll-hint" href="#carta" aria-label="Rolar para a carta">
+      <span></span>
+    </a>
+  </div>
+</section>
+
+<!-- CARTA -->
+<section class="section" id="carta">
+  <p class="section-eyebrow">a carta</p>
+  <h2 class="section-title">Coisas que eu queria te dizer</h2>
+
+  <div class="letter">
+    <p class="letter-greeting">Naná,</p>
+
+    <!-- ESCREVA SUA CARTA AQUI. Pode usar quantos parágrafos quiser,
+         é só copiar o padrão <p>...</p> abaixo. -->
+    <p id="carta-texto">
+      Minha querida Naná,
+      
+      Não sou homem de escrever cartas. Nunca fui de saber dizer as coisas do jeito certo, na hora certa. Mas hoje eu quero tentar, porque acho que você merece ouvir isso escrito, pra poder guardar e ler de novo quando quiser.
+      
+      Lembro certinho como começou. Eu ali, fazendo minhas lives no vava, sem imaginar nada. Você me seguiu no dia 12 de abril, e eu nem sabia o tanto que aquilo ia mudar minha vida. Um mês depois, no dia 12 de maio, você me mandou mensagem perguntando se eu poderia conversar com você (a gente iria se tornar duokkkk). Foi tão simples assim. E de lá pra cá, virou história.
+      
+      Eu não sei explicar direito o que você fez comigo desde aquele dia. Só sei que você me travava. Ainda me trava. Do nada, no meio de uma call, você soltava um daqueles jeitinhos carinhosos de me chamar e eu esquecia até o que tava fazendo. Foi aí que percebi que não queria só jogar com você, eu queria ficar.
+      
+      Tem coisa em você que me encanta de um jeito que eu nem sei se consigo colocar em palavras direito. Sua voz. Seu sorriso. E seus olhos, Yunna, você manda foto deles e dá pra ver tudo que você sente sem precisar dizer nada. Isso me encanta muito. Você fala com os olhos de um jeito que ninguém mais fala comigo.
+      
+      E eu nunca vou esquecer o dia 26 de maio. Você me mandou aquela lista, "10 motivos pra me amar", e eu fiquei ali, olhando pra tela, com o coração cheio, pensando que eu não merecia tanto carinho assim vindo de alguém. Mas você deu. E continua dando, todo dia.
+      
+      Minha princesa, minha bebê, eu chamo você assim porque é o que você é pra mim. Alguém que eu quero cuidar, proteger, e ficar do lado pelo tempo que for. Não sei o que o futuro guarda, mas sei que quero descobrir isso do seu lado.
+      
+      Feliz aniversário, meu amor. Que esse ano que vem seja tão bom pra você quanto você tem sido pra mim.
+    </p>
+
+    <p class="letter-sign">com amor,<br>Celso</p>
+  </div>
+</section>
+
+<!-- FOTOS -->
+<section class="section" id="fotos">
+  <p class="section-eyebrow">minhas fotos favoritas suas</p>
+  <h2 class="section-title">eu amo tanto você yunna</h2>
+
+  <div class="gallery">
+    <figure class="polaroid p1">
+      <img src="images/foto1.jpg" alt="Foto de vocês juntos" loading="lazy">
+      <figcaption>você me mandou essa recentemente mas já se tornou a minha favorita</figcaption>
+    </figure>
+    <figure class="polaroid p2">
+      <img src="images/foto2.jpg" alt="Foto de vocês juntos" loading="lazy">
+      <figcaption>essa só demonstra o quão perfeita você é</figcaption>
+    </figure>
+    <figure class="polaroid p3">
+      <img src="images/foto3.jpg" alt="Foto de vocês juntos" loading="lazy">
+      <figcaption>como sempre, os seus olhos demonstrando muito</figcaption>
+    </figure>
+    <figure class="polaroid p4">
+      <img src="images/foto4.jpg" alt="Foto de vocês juntos" loading="lazy">
+      <figcaption>e essa eu quero poder recriar com você</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- PLAYLIST -->
+<section class="section" id="playlist">
+  <p class="section-eyebrow">a nossa trilha</p>
+  <h2 class="section-title">nossas músicas favoritas, dois gostos musicais, dois amores</h2>
+  <p class="playlist-note">continuo a te amar minha bebe</p>
+
+  <div class="playlist-embed">
+    <iframe
+      style="border-radius:16px"
+      src="https://open.spotify.com/embed/playlist/6SJgS9a30nFTksRq9VxrcY?utm_source=generator&theme=0"
+      width="100%"
+      height="352"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>feito à mão por Celso, para Naná — 15 de julho</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
