@@ -346,6 +346,6 @@ a:focus-visible, iframe:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .confetti-piece {
     animation: none;
-    opacity: 0;
+    opacity: 0.7;
   }
 }
